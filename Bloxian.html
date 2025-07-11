@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)file:///C:/Users/rcgaf/Downloads/RobloxianA.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./Bloxian_files/css2">
+    <link rel="stylesheet" href="./Bloxian_files/style.css">
+<link rel="stylesheet" href="chrome-extension://ihcjicgdanjaechkgeegckofjjedodee/app/content-style.css"></head>
+<body>
+    <nav class="topbar ai-style-change-1">
+        <img src="./Bloxian_files/bloxian.png" class="logo-elemen">
+        <div class="centro">
+            <div class="TopBarButton ai-style-change-1" onclick="executor()">
+                <span class="material-symbols-outlined">
+                    deployed_code
+                    </span>
+                    <p>Executor</p>
+            </div>
+            <div class="TopBarButton" style="color: rgb(81, 81, 81);" onclick="ScriptHub()">
+                <span class="material-symbols-outlined">
+                    description
+                    </span>
+                    <p>Script Hub</p>
+            </div>
+            <div class="TopBarButton" style="color: rgb(81, 81, 81);" onclick="document.getElementById(&#39;settings_box&#39;).style.display = &#39;flex&#39;;">
+                <span class="material-symbols-outlined">
+                    settings
+                    </span>
+                    <p>Settings</p>
+            </div>
+            <div class="TopBarButton" style="color: rgb(81, 81, 81);">
+                <span class="material-symbols-outlined">
+                    open_in_new
+                    </span>
+                    <p>Open Roblox (doesnt work idk why)</p>
+            </div>
+        </div>
+    </nav>
+    <div class="execution" id="execu" style="display: flex;">
+        <div class="Sidebar">
+            <button class="SDE_Bar" style="margin-top: 5px;" id="executebutton">
+                <span class="material-symbols-outlined">
+                    play_arrow
+                    </span>
+            </button>
+            <button class="SDE_Bar" onclick="document.getElementById(&#39;textbox&#39;).value = &#39;&#39;;">
+                <span class="material-symbols-outlined">
+                    backspace
+                    </span>
+            </button>
+            <button class="SDE_Bar" onclick="downloadLuaFile()">
+                <span class="material-symbols-outlined">
+                    download
+                    </span>
+            </button>
+            <button class="SDE_Bar">
+                <span class="material-symbols-outlined">
+                    upload_file
+                    </span>
+            </button>
+            <button class="SDE_Bar" style="margin-top: 220px;">
+                <span class="material-symbols-outlined">
+                    view_in_ar
+                    </span>
+            </button>
+            <button class="SDE_Bar">
+                <span class="material-symbols-outlined">
+                    refresh
+                    </span>
+            </button>
+        </div>
+        <div class="TerminalPart">
+            <textarea id="textbox" placeholder="Write your script Here!" wrap="hard" spellcheck="false">print('Vision is Working!')</textarea>
+        </div>
+    </div>
+    <div class="settings" style="display: none;" id="settings_box">
+        <div class="TitleBarSettings">
+            <h1 class="sts">Settings</h1>
+            <button class="x_button" onclick="document.getElementById(&#39;settings_box&#39;).style.display = &#39;none&#39;">X</button>
+        </div>
+        <input type="text" placeholder="Key" id="KeyBox">
+        <input type="text" placeholder="Username" id="Username">
+        <button class="ApplySettings" id="apply_config"> Apply </button>
+    </div>
+    <div class="ScriptHub" id="SHUB" style="display: none;"><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/Dex.png"></div><div class="TitleParts"><p>Dex</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/rwfresh.png"></div><div class="TitleParts"><p>Respawn</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>R6</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Katanirst</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Refinery</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>The Button</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>War Helicopter</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>FakeVR</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Infinite Yield</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Reality Glitcher</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>CHANCE</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Tesseract</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Banana</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Mr Bye Bye</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Mr Bye Bye Mini</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Mr Bye Bye Giant</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Lost Psygen</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/banhammer.png"></div><div class="TitleParts"><p>Ban Hammer</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/lunatic.png"></div><div class="TitleParts"><p>Lunatic</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/orb.png"></div><div class="TitleParts"><p>Reality Orb</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/siren.png"></div><div class="TitleParts"><p>Siren Head</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/hammer.png"></div><div class="TitleParts"><p>SledgeHammer</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/mystic.png"></div><div class="TitleParts"><p>Mystic Tools</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/TopKek.png"></div><div class="TitleParts"><p>Topkek V3</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/k00p.png"></div><div class="TitleParts"><p>K00pkidd gui</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/doge.png"></div><div class="TitleParts"><p>doges</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/ball.png"></div><div class="TitleParts"><p>RopeWeb</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/wasp.png"></div><div class="TitleParts"><p>Wasp Fighter Jet</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Wild Katana</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Gun Journer</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Bow Master</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Abyss Eye</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Wiron</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Road Rogue</p><button class="runButton">▶</button></div></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Tiny Infernous</p><button class="runButton">▶</button></div><div class="ScriptBox"><div class="ImageBox"><img src="./Bloxian_files/script.png"></div><div class="TitleParts"><p>Exser New</p><button class="runButton">to use put require(10868847330):pls("yourusername") in the console then run it</button></div></div></div></div>
+<script src="./Bloxian_files/server.js.download"></script>
+
+</body></html>
